@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Site desenvolvido por Gabriela Ramires cuja finalidade é obter informações dos usuários através do formulário.">
+    <meta name="keyword content=" Gabriela Ramires, formulário ,html, javascript, css>
+    <meta name="author" content="Gabriela Ramires">
+    <title>Formulário</title>
+    <link rel="icon" href="registro.ico" />
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+    <h1>Cadastre-se</h1>
+    <div class="container">
+
+        <div id="aviso" style="display:none">
+
+        </div>
+        <form id="form" action="email.php" method="POST">
+
+            <fieldset>
+                <legend>Nome Completo</legend>
+                <input type="name"  name="nome" required>
+            </fieldset>
+            <fieldset>
+                <legend>E-mail</legend>
+                <input type="email"  name="email" required>
+            </fieldset>
+            <fieldset>
+                <legend>Telefone</legend>
+                <input type="tel" name="telefone" placeholder="(00) 00000-0000" required >
+            </fieldset>
+            <fieldset id="Senha">
+                <legend>Senha</legend>
+                <input name="senha" type="password" onkeyup="VerificaSenha()" required>
+            </fieldset>
+            <fieldset id="Rep_senha">
+                <legend>Repetir senha</legend>
+                <input id="rep_senha" name="rep_senha" type="password" onkeyup="VerificaSenha()" required>
+            </fieldset>
+
+            <div class="botoes">
+                <input id="submit" type="submit" formtarget="_self">
+                <input id="reset" type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+
+
+    <footer class="footer">Desenvolvido por: Gabriela Ramires | Para mais aplicações: <a
+            href="https://portfolio-gabi.herokuapp.com/">www.portfolio-gabi.herokuapp.com</footer>
+
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="sweetalert2.all.min.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
