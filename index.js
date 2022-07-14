@@ -37,7 +37,7 @@ var form = document.getElementById('form').onsubmit = function () {
 
     return (
         Swal.fire({
-            position: 'top-end',
+            position: 'top-center',
             icon: 'success',
             title: 'Seu cadastro foi realizado com sucesso!',
             showConfirmButton: false,
