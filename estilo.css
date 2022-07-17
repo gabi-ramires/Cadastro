@@ -2,7 +2,6 @@
 
 body {
     background-image: linear-gradient(rgba(36, 36, 184, 0.486), rgba(125, 125, 168, 0.637), rgba(36, 36, 184, 0.486));
-    height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: center;
     justify-items: center;
@@ -42,7 +41,7 @@ fieldset {
     justify-content: center;
     margin: auto;
     margin-top: 10px;
-    
+
 }
 
 form {
@@ -70,7 +69,7 @@ input {
 }
 
 .botoes {
-    margin:auto;
+    margin: auto;
     width: 80%;
     text-align: center;
     flex-direction: row;
@@ -122,7 +121,7 @@ input {
 #aviso {
     text-align: center;
     font-size: small;
-   margin: auto;
+    margin: auto;
     background-color: rgba(255, 0, 0, 0.452);
     border: 1px solid rgba(255, 0, 0, 0.774);
     color: rgb(85, 6, 6);
@@ -134,11 +133,11 @@ input {
     align-items: center;
     width: 80%;
     justify-items: center;
-    
+
 }
 
-.container{
-   
+.container {
+
     width: 400px;
     display: flex;
     flex-direction: column;
@@ -147,3 +146,13 @@ input {
     margin: auto;
 }
 
+
+
+#range {
+    border: 1px solid red;
+    width: 25px;
+    display: flex;
+    margin: auto;
+    height: 10px;
+
+}

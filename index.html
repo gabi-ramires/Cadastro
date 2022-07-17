@@ -16,32 +16,37 @@
 </head>
 
 <body>
+    
+    <input id="range" type="range" min=0 max=1 step=1>
+
     <h1>Cadastre-se</h1>
     <div class="container">
+
 
         <div id="aviso" style="display:none">
 
         </div>
         <form id="form" action="email.php" method="POST">
 
-            <fieldset>
+            <fieldset id="Nome">
                 <legend>Nome Completo</legend>
-                <input type="name"  name="nome" required>
+                <input id="nome" type="name" name="nome" required onkeyup="VerificaNome()">
             </fieldset>
-            <fieldset>
+            <fieldset id="Email">
                 <legend>E-mail</legend>
-                <input type="email"  name="email" required>
+                <input type="email" name="email" onkeyup=VerificaEmail() required>
             </fieldset>
-            <fieldset>
+            <fieldset id="Tel">
                 <legend>Telefone</legend>
-                <input type="tel" name="telefone" placeholder="(00) 00000-0000" required >
+                <input id="tel" type="tel" maxlength=17 minlength=17 name="telefone" placeholder="(00) 00000-0000"
+                    pattern="[0-9]({2}) [0-9]{5} - [0-9]{4}" onkeyup=VerificaTel() required>
             </fieldset>
             <fieldset id="Senha">
                 <legend>Senha</legend>
                 <input name="senha" type="password" onkeyup="VerificaSenha()" required>
             </fieldset>
             <fieldset id="Rep_senha">
-                <legend>Repetir senha</legend>
+                <legend>Confirme senha</legend>
                 <input id="rep_senha" name="rep_senha" type="password" onkeyup="VerificaSenha()" required>
             </fieldset>
 
@@ -56,8 +61,8 @@
     <footer class="footer">Desenvolvido por: Gabriela Ramires | Para mais aplicações: <a
             href="https://portfolio-gabi.herokuapp.com/">www.portfolio-gabi.herokuapp.com</footer>
 
-            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-            <script src="sweetalert2.all.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
 
     <script src="index.js"></script>
 </body>
