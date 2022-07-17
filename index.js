@@ -40,9 +40,9 @@ function VerificaSenha() {
 
 
 
-    document.querySelector('#nome').addEventListener('keyup', function () {
+document.querySelector('#inputNome').addEventListener('keyup', function () {
     var fieldsetNome = document.getElementById('Nome');
-    var Nome = document.getElementById('nome')
+    var Nome = document.getElementById('inputNome')
 
 
     if ((Nome.value == null) || (Nome.value == "")) {
