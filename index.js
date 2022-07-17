@@ -49,7 +49,7 @@ var form = document.getElementById('form').onsubmit = function () {
     )
 }
 
-function VerificaNome() {
+var inputNome = document.getElementById('nome').onkeyup = function VerificaNome() {
     var Nome = document.getElementById('nome')
     var fieldsetNome = document.getElementById('Nome')
 
