@@ -38,23 +38,11 @@ function VerificaSenha() {
 }
 
 
-var form = document.getElementById('form').onsubmit = function () {
 
-    return (
-        Swal.fire({
-            position: 'top-center',
-            icon: 'success',
-            title: 'Seu cadastro foi realizado com sucesso!',
-            showConfirmButton: false,
-            timer: 4000
-        })
-    )
-}
-
-var Nome = document.getElementById('nome')
-var fieldsetNome = document.getElementById('Nome')
 
 function VerificaNome() {
+    var Nome = document.getElementById('nome')
+    var fieldsetNome = document.getElementById('Nome')
 
 
     if ((Nome.value == null) || (Nome.value == "")) {
@@ -156,6 +144,18 @@ function VerificaEmail() {
     }
 }
 
+var form = document.getElementById('form').onsubmit = function () {
+
+    return (
+        Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: 'Seu cadastro foi realizado com sucesso!',
+            showConfirmButton: false,
+            timer: 4000
+        })
+    )
+}
 
 
 
