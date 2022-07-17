@@ -41,7 +41,7 @@ function VerificaSenha() {
 
 
 function VerificaNome() {
-    var Nome = document.getElementById('nome')
+    var Nome = document.querySelector('input[name=nome]');
     var fieldsetNome = document.getElementById('Nome')
 
 
