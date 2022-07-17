@@ -1,4 +1,6 @@
 
+
+
 function VerificaSenha() {
 
     var senha = document.querySelector('input[name=senha]');
@@ -49,9 +51,11 @@ var form = document.getElementById('form').onsubmit = function () {
     )
 }
 
+var Nome = document.getElementById('nome')
+var fieldsetNome = document.getElementById('Nome')
+
 function VerificaNome() {
-    var Nome = document.getElementById('nome')
-    var fieldsetNome = document.getElementById('Nome')
+
 
     if ((Nome.value == null) || (Nome.value == "")) {
         Nome.setCustomValidity('O nome não pode ser vazio.');
@@ -138,11 +142,11 @@ function VerificaEmail() {
         if (arrayLetras[j] == '@') {
 
             aux = aux + 1;
-            console.log("aux: "+aux)
+            console.log("aux: " + aux)
 
         }
 
-        else if(arrayLetras[j] == '.' && aux > 1) {
+        else if (arrayLetras[j] == '.' && aux > 1) {
 
             console.log("ENTROUUU")
             fieldsetEmail.setAttribute('style', 'border-color:green')
