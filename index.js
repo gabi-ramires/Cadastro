@@ -40,9 +40,9 @@ function VerificaSenha() {
 
 
 
-function VerificaNome() {
-    var Nome = document.querySelector('input[name=nome]');
-    var fieldsetNome = document.getElementById('Nome')
+    document.querySelector('#nome').addEventListener('keyup', function () {
+    var fieldsetNome = document.getElementById('Nome');
+    var Nome = document.getElementById('nome')
 
 
     if ((Nome.value == null) || (Nome.value == "")) {
@@ -67,7 +67,7 @@ function VerificaNome() {
 
         console.log("saiu")
     }
-}
+});
 
 function VerificaTel() {
     var telefone = document.getElementById('tel');
