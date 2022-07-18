@@ -62,8 +62,9 @@ document.querySelector('#inputNome').addEventListener('keyup', function () {
 
         aviso.setAttribute('style', 'display:none')
         fieldsetNome.setAttribute('style', 'border-color:green')
-
+       
         fieldsetNome.style.color = 'green'
+        
 
         console.log("saiu")
     }
@@ -156,8 +157,6 @@ var form = document.getElementById('form').onsubmit = function () {
         })
     )
 }
-
-
 
 
 
