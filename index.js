@@ -39,9 +39,10 @@ function VerificaSenha() {
 
 
 
+var fieldsetNome = document.getElementById('Nome');
 
 document.querySelector('#inputNome').addEventListener('keyup', function () {
-    var fieldsetNome = document.getElementById('Nome');
+
     var Nome = document.getElementById('inputNome')
 
 
@@ -54,7 +55,7 @@ document.querySelector('#inputNome').addEventListener('keyup', function () {
 
         fieldsetNome.style.color = 'red'
 
-        console.log("entrou")
+
 
     } else {
         Nome.setCustomValidity('');
@@ -62,11 +63,10 @@ document.querySelector('#inputNome').addEventListener('keyup', function () {
 
         aviso.setAttribute('style', 'display:none')
         fieldsetNome.setAttribute('style', 'border-color:green')
-       
-        fieldsetNome.style.color = 'green'
-        
 
-        console.log("saiu")
+        fieldsetNome.style.color = 'green'
+
+
     }
 });
 
@@ -119,12 +119,6 @@ function VerificaEmail() {
 
     arrayLetras = Email.value.split("")
 
-    console.log("------ inicio ---------")
-    console.log(i)
-    console.log(arrayLetras)
-    console.log(arrayLetras[i])
-    console.log(arrayLetras.length)
-    console.log("------ fim ---------")
 
     for (var j = 0; j <= arrayLetras.length; j++) {
 
@@ -137,7 +131,6 @@ function VerificaEmail() {
 
         else if (arrayLetras[j] == '.' && aux > 1) {
 
-            console.log("ENTROUUU")
             fieldsetEmail.setAttribute('style', 'border-color:green')
 
             fieldsetEmail.style.color = 'green'
@@ -158,7 +151,19 @@ var form = document.getElementById('form').onsubmit = function () {
     )
 }
 
+var botao = document.getElementById('lightSwitch').onchange = function () {
 
+    var bot = document.getElementById('lightSwitch')
+    var titulo = document.getElementById('h1')
+    if (bot.checked) {
+        console.log("ativado")
+        titulo.style.color = 'white'
 
+    }
 
+    else {
+        titulo.style.color = 'rgb(34, 57, 160)';
+    }
+
+}
 

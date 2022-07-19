@@ -21,7 +21,7 @@
   ";
   
   //Emails para quem será enviado o formulário
-  $destino = "engenheira.ramires@gmail.com";
+  $destino = "contato@overmind.ai";
   $assunto = "Cadastro pelo Site";
 
   //Este sempre deverá existir para garantir a exibição correta dos caracteres
